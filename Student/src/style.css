@@ -1,0 +1,25 @@
+
+.btnadd, .btndelete, .btnedit, .btnlogin {
+    -fx-background-size: 100% 100%;
+	-fx-background-color: transparent; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;   
+}
+
+.btnadd {
+	-fx-background-image: url("images/add.png");
+}
+
+.btndelete {
+	-fx-background-image: url("images/garbage.png");
+}
+
+.btnadd:hover, .btndelete:hover, .btnedit:hover, .btnlogin:hover {
+    -fx-background-color: #F4F5D5;
+	-fx-background-color:transparent 100%;
+}
+
+.btnadd:hover:pressed, .btndelete:hover:pressed, .btnlogin:hover:pressed , .btnedit:hover:pressed{
+    -fx-background-color: #D6D5F5;
+	-fx-padding: 10 -25 -30 10;
+}
