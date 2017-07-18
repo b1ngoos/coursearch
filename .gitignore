@@ -1,0 +1,8 @@
+out/
+*.iml
+*.txt
+.idea/
+*course.xml
+*chapter.xml
+lib/
+target/
