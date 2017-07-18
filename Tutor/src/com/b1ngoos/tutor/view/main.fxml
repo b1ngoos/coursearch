@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="337.0" prefWidth="568.0" stylesheets="@../../../../resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.b1ngoos.tutor.controllers.MainController">
+   <children>
+      <AnchorPane prefHeight="47.0" prefWidth="558.0">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" text="Tutor name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtTutorName" layoutX="103.0" layoutY="13.0" prefHeight="6.0" prefWidth="155.0" text="Roman">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="btnLogin" layoutX="267.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="24.0" prefWidth="24.0" styleClass="btnlogin" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <TableView fx:id="tableCourses" prefHeight="200.0" prefWidth="164.0">
+                    <columns>
+                      <TableColumn fx:id="columnCourse" prefWidth="163.0" text="Course" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="202.0" prefWidth="399.0">
+               <children>
+                  <TableView fx:id="tableTasks" prefHeight="144.0" prefWidth="156.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="columnTitle" prefWidth="151.0" text="Title" />
+                        <TableColumn fx:id="columnComplexity" prefWidth="126.0" text="Complexity" />
+                        <TableColumn fx:id="columnDuration" prefWidth="126.0" text="Duration" />
+                        <TableColumn fx:id="columnPrice" prefWidth="126.0" text="Price" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="79.0" prefWidth="568.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="75.0" prefWidth="169.0">
+                     <children>
+                        <Button fx:id="btnAddCourse" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="24.0" prefWidth="24.0" styleClass="btnadd">
+                           <HBox.margin>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </HBox.margin>
+      
+                        </Button>
+                        <Button fx:id="btnEditCourse" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="24.0" prefWidth="24.0" styleClass="btnedit">
+                           <HBox.margin>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnDeleteCourse" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="24.0" prefWidth="24.0" styleClass="btndelete">
+                           <HBox.margin>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" maxHeight="75.0" prefHeight="75.0" prefWidth="394.0">
+                     <children>
+                        <Button fx:id="btnAddChapter" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="24.0" prefWidth="24.0" styleClass="btnadd">
+                           <HBox.margin>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnEditChapter" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="24.0" prefWidth="24.0" styleClass="btnedit">
+                           <HBox.margin>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnDeleteChapter" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="24.0" prefWidth="24.0" styleClass="btndelete">
+                           <HBox.margin>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
